@@ -1,0 +1,9 @@
+##Implementation steps for the 2D CFAR process##
+Determined number of training and guad cells for each dimension. Slide the cell under test for the complete matrix. For every iteration took the summation of signal level in training cells by converting the value from logarithmic to linear using db2pow function.  Took the average and converted it back to logarithmic using pow2db function. Added offset to determine threshold and compared the signal CUT against the threshold. If the CUT level > threshold assign it a value of 1, else equate it to 0.
+
+
+##Selection of Training, Guard cells and offset##
+Selected training and guard cells to have clear visible peak in the final results. Guard cells are kept larger to avoid leakage of peak signal into the noise signal.
+
+##Steps taken to suppress the non-thresholded cells at the edges##
+Seperate matrix was initialized with zeros and only the CUT signal > threshold was stored into this matrix.
