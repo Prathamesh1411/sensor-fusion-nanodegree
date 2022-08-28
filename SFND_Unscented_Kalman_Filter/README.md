@@ -31,7 +31,6 @@ The red spheres above cars represent the (x,y) lidar detection and the purple li
   * Linux: make is installed by default on most Linux distros
 * gcc/g++ >= 5.4
   * Linux: gcc / g++ is installed by default on most Linux distros
- * PCL 1.10
 
 ## Basic Build Instructions
 
